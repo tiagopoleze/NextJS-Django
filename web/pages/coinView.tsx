@@ -69,7 +69,7 @@ const CoinView: React.FC<{ coins: Coin[] }> = ({ coins }) => {
                 <tbody className="bg-white divide-y divide-gray-200">
                   {coins.map((coin) => {
                     return (
-                      <tr>
+                      <tr key={Math.random()*1000000}>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center">
                             <div className="ml-4">
