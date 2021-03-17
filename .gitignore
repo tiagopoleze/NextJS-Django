@@ -8259,3 +8259,6 @@ server/env/bin/django-admin.py
 server/env/bin/django-admin
 server/env/lib/python3.8/site-packages/asgiref-3.3.1.dist-info/INSTALLER
 server/env/bin/sqlformat
+web/.idea/workspace.xml
+web/.idea/prettier.xml
+web/.idea/workspace.xml
