@@ -6,15 +6,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801323fd-a623-4567-ac27-e6fc6421898c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/Coin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/heading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/coinView.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="801323fd-a623-4567-ac27-e6fc6421898c" name="Default Changelist" comment="Finished the front without my own server in Django" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,8 +86,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615969275919</updated>
-      <workItem from="1615969277052" duration="5722000" />
+      <workItem from="1615969277052" duration="5828000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished the front without my own server in Django">
+      <created>1615975102229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615975102230</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +111,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished the front without my own server in Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the front without my own server in Django" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
