@@ -1,9 +1,9 @@
 export interface Coin {
+  name: string;
+  symbol: string;
   coinPrice: number;
   marketCap: number;
   priceChange: boolean;
-  name: string;
-  symbol: string;
 }
 
 export const positiveCoin: Coin = {

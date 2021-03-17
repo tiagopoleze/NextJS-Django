@@ -1,10 +1,12 @@
 export interface User {
+  users_id?: string
   username: string;
   profilePicture: string;
   emailAddress: string;
   favoriteCoin: string;
 }
 export const userExample: User = {
+  users_id: 'lkasndasn',
   username: "provisn",
   emailAddress: "provisn@provisn.com",
   favoriteCoin: "EUR",
