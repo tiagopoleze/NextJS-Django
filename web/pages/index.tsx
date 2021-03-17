@@ -8,12 +8,13 @@ import { GetStaticProps } from "next";
 import { User, userExample } from "../Models/User";
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  // const res = await fetch('https://.../user')
+  const res = await fetch('http://127.0.0.1:8000/myusers/')
+  const users: User[] = await res.json()
   // const users = await res.json()
-  const users: User[] = [];
-  for (let i = 0; i < 100; i++) {
-    users.push(userExample);
-  }
+  // const users: User[] = [];
+  // for (let i = 0; i < 100; i++) {
+  //   users.push(userExample);
+  // }
 
   return {
     props: {
@@ -30,7 +31,7 @@ const Home: React.FC<{ users: User[] }> = ({ users }) => {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {users.map((user) => {
           return (
-            <div key={Math.random()*10000} className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+            <div key={user.users_id} className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
               <div className="flex-shrink-0">
                 <img
                   className="h-10 w-10 rounded-full"
