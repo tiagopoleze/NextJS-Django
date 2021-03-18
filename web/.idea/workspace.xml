@@ -6,15 +6,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801323fd-a623-4567-ac27-e6fc6421898c" name="Default Changelist" comment="Get data from internet to coins values">
-      <change afterPath="$PROJECT_DIR$/components/CoinList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CoinListRow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Dimmer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/getCoins.ts" afterDir="false" />
+    <list default="true" id="801323fd-a623-4567-ac27-e6fc6421898c" name="Default Changelist" comment="Improve CoinView and get coins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/coinView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/coinView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/createUsers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/createUsers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +66,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -105,7 +95,8 @@
       <workItem from="1615992795236" duration="394000" />
       <workItem from="1615995594102" duration="1475000" />
       <workItem from="1615998285390" duration="5281000" />
-      <workItem from="1616007121572" duration="2563000" />
+      <workItem from="1616007121572" duration="2779000" />
+      <workItem from="1616050136257" duration="1154000" />
     </task>
     <task id="LOCAL-00001" summary="Finished the front without my own server in Django">
       <created>1615975102229</created>
@@ -142,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616005779904</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Improve CoinView and get coins">
+      <created>1616009776730</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616009776730</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +164,8 @@
     <MESSAGE value="Change the pages/index in front to consume the server data from myusers" />
     <MESSAGE value="Create route api/createUsers to create some dummy data for the pages/index. Everything in the front." />
     <MESSAGE value="Get data from internet to coins values" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get data from internet to coins values" />
+    <MESSAGE value="Improve CoinView and get coins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve CoinView and get coins" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
