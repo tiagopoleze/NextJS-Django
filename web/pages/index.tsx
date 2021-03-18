@@ -3,10 +3,13 @@ import React from "react";
 
 // Next.JS
 import { GetStaticProps } from "next";
-import { useRouter } from "next/router";
 
 // Models
-import { User, userExample } from "../Models/User";
+import { User } from "../Models/User";
+
+// Components
+import ButtonCreateUsers from "../components/ButtonCreateUsers";
+import UserCard from "../components/UserCard";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const res = await fetch("http://127.0.0.1:8000/myusers/");
@@ -21,55 +24,15 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 const Home: React.FC<{ users: User[] }> = ({ users }) => {
-  const router = useRouter();
   if (users.length === 0) {
-    return (
-      <React.Fragment>
-        <br />
-        <button
-          type="button"
-          className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          onClick={async (e) => {
-            await fetch("api/createUsers");
-            router.reload();
-          }}
-        >
-          Add users
-        </button>
-      </React.Fragment>
-    );
+    return <ButtonCreateUsers />;
   }
 
   return (
     <React.Fragment>
-      <br />
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 py-4">
         {users.map((user) => {
-          return (
-            <div
-              key={user.users_id}
-              className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
-            >
-              <div className="flex-shrink-0">
-                <img
-                  className="h-10 w-10 rounded-full"
-                  src={user.profilePicture}
-                  alt=""
-                />
-              </div>
-              <div className="flex-1 min-w-0">
-                <a href="#" className="focus:outline-none">
-                  <span className="absolute inset-0" aria-hidden="true" />
-                  <p className="text-sm font-medium text-gray-900">
-                    {user.username}
-                  </p>
-                  <p className="text-sm text-gray-500 truncate">
-                    {user.emailAddress} / {user.favoriteCoin}
-                  </p>
-                </a>
-              </div>
-            </div>
-          );
+          return <UserCard user={user} />;
         })}
       </div>
     </React.Fragment>
