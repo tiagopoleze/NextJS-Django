@@ -1,6 +1,4 @@
-# Provisn
-
-An assignment for the provisn Company
+# NextJS-Django
 
 ## Getting Started
 
